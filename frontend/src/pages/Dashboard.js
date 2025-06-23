@@ -32,7 +32,7 @@ export default function Dashboard() {
       <ul>
         {/* Lista todos os usuários retornados pelo backend */}
         {usuarios.map(u => (
-          <li key={u.id}>{u.nome} - {u.email}</li>
+          <li key={u.id}>{u.username.toUpperCase()} - {u.email}</li>
         ))}
       </ul>
     </div>
